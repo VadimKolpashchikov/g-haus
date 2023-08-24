@@ -1,0 +1,88 @@
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+  @media (max-width: 575px) {
+    margin-bottom: 12px;
+  }
+}
+.titleBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+
+  @media (max-width: 575px) {
+    gap: 5px;
+  }
+  .titleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    aspect-ratio: 1/1;
+    padding: 4px;
+    background: #eeec0b;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      height: auto;
+    }
+
+    @media (max-width: 575px) {
+      min-width: 22px;
+
+      img {
+        height: 12px;
+      }
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+    @media (max-width: 575px) {
+      font-size: 18px;
+      line-height: 130%;
+    }
+  }
+}
+.titleWatch {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #323232;
+  cursor: pointer;
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+.titleYoutube {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #ff0000;
+  @media (max-width: 575px) {
+    gap: 5px;
+    font-size: 14px;
+  }
+  img {
+    height: auto;
+    @media (max-width: 575px) {
+      width: 24px;
+    }
+  }
+}

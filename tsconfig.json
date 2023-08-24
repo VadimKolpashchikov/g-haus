@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@main/*": ["./styles/components/main/*"],
+      "@catalog/*": ["./styles/components/catalog/*"],
+      "@basket/*": ["./styles/components/basket/*"],
+      "@brand/*": ["./styles/components/brand/*"],
+      "@blog/*": ["./styles/components/blog/*"],
+      "@subcatalog/*": ["./styles/components/subcatalog/*"],
+      "@blogOne/*": ["./styles/components/blogOne/*"],
+      "@account/*": ["./styles/components/account/*"],
+      "@licenses/*": ["./styles/components/licenses/*"],
+      "@product/*": ["./styles/components/product/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

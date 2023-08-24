@@ -1,0 +1,84 @@
+.main {
+  grid-column: 2/3;
+  margin-top: 50px;
+  max-width: 500px;
+  width: 100%;
+
+  @media (max-width: 1299px) {
+    display: none;
+  }
+
+  .characteristic {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .characteristicItem {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .name {
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(50, 50, 50, 0.7);
+    }
+
+    div {
+      width: 100%;
+      margin-left: 7px;
+      margin-right: 2px;
+      border-bottom: 2px dotted rgba(50, 50, 50, 0.7);
+    }
+
+    .value {
+      flex-shrink: 0;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  .description {
+    margin-top: 40px;
+
+    p {
+      margin-bottom: 10px;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    .moreText {
+      overflow: hidden;
+      transition: 0.3s all;
+    }
+
+    a {
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(50, 50, 50, 0.6);
+      transition: 0.3s all;
+      cursor: pointer;
+
+      @media (min-width: 992px) {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

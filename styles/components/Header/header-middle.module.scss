@@ -1,0 +1,238 @@
+.main {
+  padding: 15px 0;
+  background: #fff;
+  @media (max-width: 1300px) {
+    background: #323232;
+  }
+  @media (max-width: 991px) {
+    padding: 0 0 20px 0;
+  }
+  @media (max-width: 575px) {
+    padding: 0 0 10px 0;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    @media (max-width: 991px) {
+      display: none;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      @media (max-width: 1300px) {
+        width: 111px;
+        height: 100%;
+      }
+    }
+  }
+  .catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 187px;
+    height: 48px;
+    background: #eeec0b;
+    border-radius: 15px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    flex-shrink: 0;
+    transition: 0.3s all;
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      &:hover {
+        background: #d9d710;
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .form {
+    position: relative;
+    display: block;
+    flex-grow: 1;
+    max-width: 700px;
+    border: 3px solid #dbdbdb;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 200ms height;
+    @media (max-width: 1300px) {
+    }
+    @media (max-width: 991px) {
+      background: #ffffff;
+      border-radius: 5px;
+      border: none;
+    }
+    input {
+      border: none;
+      width: 100%;
+      height: 42px;
+      padding-left: 30px;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1;
+      @media (max-width: 1300px) {
+        background: transparent;
+        color: #fff;
+      }
+      @media (max-width: 991px) {
+        height: 32px;
+        padding: 0 10px;
+        font-size: 12px;
+      }
+      &::-webkit-input-placeholder {
+        @media (max-width: 1300px) and (min-width: 992px) {
+          color: #fff;
+        }
+      }
+      &:-moz-placeholder {
+        @media (max-width: 1300px) and (min-width: 992px) {
+          color: #fff;
+        }
+      }
+      &::-moz-placeholder {
+        @media (max-width: 1300px) and (min-width: 992px) {
+          color: #fff;
+        }
+      }
+      &:-ms-input-placeholder {
+        @media (max-width: 1300px) and (min-width: 992px) {
+          color: #fff;
+        }
+      }
+    }
+    &_icon {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px 20px;
+      cursor: pointer;
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+      svg {
+        display: block;
+        max-width: 100%;
+        fill-opacity: 0;
+        color: #323232;
+        @media (max-width: 1300px) {
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 170px;
+    flex-shrink: 0;
+    @media (max-width: 1549px) {
+      margin-left: 0;
+    }
+    @media (max-width: 1199px) {
+      gap: 20px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .item {
+    svg {
+      display: block;
+      max-width: 100%;
+      fill-opacity: 0;
+      stroke-width: 2px;
+      color: #323232;
+      @media (max-width: 1300px) {
+        color: #fff;
+      }
+    }
+
+    &_name {
+      position: relative;
+      display: block;
+      margin-top: 10px;
+    }
+
+    &_number {
+      position: absolute;
+      top: -6px;
+      right: -3px;
+      transform: translateY(-100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 6px;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 700;
+
+      span {
+        position: relative;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: #ff0000;
+      }
+    }
+
+    &_link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1;
+      color: #323232;
+      @media (max-width: 1300px) {
+        color: #fff;
+      }
+    }
+  }
+
+  .item:last-child {
+    svg {
+      fill-opacity: 1;
+      stroke-opacity: 0;
+      @media (max-width: 1300px) {
+        color: #fff;
+      }
+    }
+  }
+}

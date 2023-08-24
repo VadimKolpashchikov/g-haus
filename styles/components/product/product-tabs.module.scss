@@ -1,0 +1,91 @@
+.main {
+  grid-column: 2/3;
+  align-self: flex-start;
+  margin-top: 20px;
+
+  @media (max-width: 1299px) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 899px) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    @media (max-width: 1299px) and (min-width: 900px) {
+      display: none;
+    }
+
+    @media (max-width: 575px) {
+      margin-bottom: 5px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  .tabsBox {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    @media (max-width: 1399px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 679px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 575px) {
+      gap: 10px;
+    }
+  }
+
+  .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    padding: 8px 9px;
+    border: 1px solid #323232;
+    border-radius: 5px;
+    background: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #323232;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s all;
+
+    @media (max-width: 575px) {
+      font-size: 12px;
+      line-height: 130%;
+    }
+
+    @media (min-width: 992px) {
+      &:not(.tab_active):hover {
+        background: rgba(238, 236, 11, 0.5);
+      }
+    }
+  }
+
+  .tab_active {
+    background: #eeec0b;
+    border-color: #eeec0b;
+  }
+}

@@ -1,0 +1,10 @@
+.main {
+  padding: 15px 0 35px;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    padding: 15px 0 30px;
+  }
+  @media (max-width: 575px) {
+    padding: 10px 0;
+  }
+}

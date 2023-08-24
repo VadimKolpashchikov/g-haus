@@ -1,0 +1,110 @@
+.main {
+  width: 100%;
+  padding-top: 20px;
+
+  @media (max-width: 575px) {
+    padding-top: 18px;
+  }
+
+  .swiper_wrapper {
+    width: fit-content;
+    margin-left: 0;
+  }
+
+  .list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px 30px;
+    width: max-content;
+    @media (max-width: 575px) {
+      gap: 5px;
+    }
+  }
+  .item {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 200ms background;
+
+    @media (max-width: 575px) {
+      padding: 10px 25px;
+      font-size: 12px;
+      line-height: 19px;
+    }
+
+    @media (min-width: 992px) {
+      &:hover:not(.item.active) {
+        background: rgba(136, 136, 134, 0.14);
+      }
+    }
+  }
+  .item.active {
+    background: #eeec0b;
+  }
+
+  .contentWrap {
+    width: 100%;
+    margin-top: 50px;
+
+    @media (max-width: 575px) {
+      margin-top: 30px;
+    }
+  }
+
+  .licensesBox {
+    width: 100%;
+
+    div {
+      &:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+
+        @media (max-width: 767px) {
+          gap: 20px;
+          row-gap: 10px;
+        }
+
+        @media (max-width: 575px) {
+          column-gap: 5px;
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc((100% - 5 * 10px) / 6);
+
+      @media (max-width: 1399px) {
+        width: calc((100% - 4 * 10px) / 5);
+      }
+
+      @media (max-width: 1199px) {
+        width: calc((100% - 3 * 10px) / 4);
+      }
+
+      @media (max-width: 991px) {
+        width: calc((100% - 2 * 10px) / 3);
+      }
+
+      @media (max-width: 767px) {
+        width: calc((100% - 1 * 20px) / 2);
+      }
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.main {
+  padding: 50px 0 70px 0;
+  @media (max-width: 575px) {
+    padding: 20px 0 30px 0;
+  }
+  .title {
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.videoBlock {
+  padding: 35px 0 0 0;
+
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 575px) {
+    padding: 10px 0;
+    overflow: hidden;
+  }
+
+  .videoSlider {
+    position: relative;
+  }
+  .visible {
+    overflow: hidden;
+    width: calc(100% + 40px);
+    padding: 0px 25px 35px 15px;
+    margin-left: -15px;
+    @media (max-width: 1770px) {
+      padding: 0px 0 35px 0;
+      width: 100%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      padding-bottom: 0;
+    }
+    @media (max-width: 575px) {
+      overflow: visible;
+    }
+  }
+  .swiperWrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .slide {
+    height: auto;
+    width: 568px;
+    padding-right: 15px;
+    @media (max-width: 991px) {
+      padding-right: 0;
+    }
+    @media (max-width: 767px) {
+      width: 420px;
+    }
+
+    @media (max-width: 575px) {
+      width: 290px;
+    }
+  }
+
+  .sliderBtns {
+    width: calc(100% + 40px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 991px) {
+      width: calc(100% + 30px);
+    }
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+}

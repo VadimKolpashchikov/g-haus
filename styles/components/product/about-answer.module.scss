@@ -1,0 +1,120 @@
+.main {
+  .btn {
+    margin-bottom: 20px;
+    width: 338px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 1;
+    color: #ffffff;
+    background: #54ad2a;
+    border-radius: 5px;
+    @media (max-width: 575px) {
+      width: 193px;
+      height: 41px;
+      font-size: 14px;
+    }
+  }
+  .info {
+    display: flex;
+    gap: 40px;
+    @media (max-width: 575px) {
+      gap: 15px;
+    }
+    span {
+      font-size: 18px;
+      line-height: 25px;
+      color: #686868;
+      @media (max-width: 575px) {
+        font-size: 12px;
+        line-height: 19px;
+      }
+    }
+  }
+  .list {
+    margin-top: 50px;
+    @media (max-width: 575px) {
+      margin-top: 20px;
+    }
+  }
+  .item {
+    &_title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      @media (max-width: 575px) {
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+    &_info {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      @media (max-width: 575px) {
+        gap: 15px;
+        margin-top: 10px;
+      }
+    }
+    &_name,
+    &_date {
+      font-size: 16px;
+      line-height: 1;
+      color: #686868;
+      @media (max-width: 575px) {
+        font-size: 12px;
+      }
+    }
+    &_name {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        display: block;
+        height: auto;
+      }
+    }
+    &_btn {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 16px;
+      line-height: 1;
+      color: #54ad2a;
+      @media (max-width: 575px) {
+        font-size: 12px;
+      }
+      img {
+        display: block;
+        height: auto;
+        @media (max-width: 575px) {
+          width: 5px;
+        }
+      }
+    }
+    &_answer {
+      margin-top: 30px;
+      margin-left: 70px;
+      @media (max-width: 575px) {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    }
+    &_text {
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      @media (max-width: 575px) {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+    @media (max-width: 575px) {
+      margin-bottom: 20px;
+    }
+  }
+}

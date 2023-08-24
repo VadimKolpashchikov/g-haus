@@ -1,0 +1,129 @@
+.features {
+  padding: 35px 0;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 575px) {
+    padding: 10px 0;
+  }
+
+  .swiperWrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .slide {
+    display: flex;
+    align-items: stretch;
+    gap: 29px;
+    width: 100%;
+
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 991px) {
+      gap: 15px;
+    }
+    @media (max-width: 767px) {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      width: auto;
+    }
+  }
+
+  .featureWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-grow: 1;
+    min-height: 223px;
+    height: auto;
+    width: 100%;
+    padding: 20px 15px;
+    background: #f5f5f5;
+    border-radius: 5px;
+
+    @media (max-width: 1199px) {
+      width: calc(100% / 3 - 29px * 2);
+    }
+
+    @media (max-width: 991px) {
+      min-height: auto;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    @media (max-width: 767px) {
+      width: auto;
+      max-width: 250px;
+    }
+
+    @media (max-width: 575px) {
+      justify-content: center;
+      width: auto;
+      max-width: 200px;
+      padding: 12px 8px;
+      min-height: 70px;
+    }
+
+    @media (max-width: 459px) {
+      max-width: 157px;
+      min-height: 49px;
+    }
+
+    img {
+      @media (max-width: 991px) {
+        max-width: 80px;
+        height: auto;
+        max-height: 60px;
+      }
+
+      @media (max-width: 575px) {
+        height: 35px;
+        width: auto;
+      }
+
+      @media (max-width: 459px) {
+        height: 27px;
+        width: 42px;
+      }
+    }
+  }
+
+  .featureText {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    user-select: none;
+
+    @media (max-width: 991px) {
+      text-align: left;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    @media (max-width: 459px) {
+      font-size: 12px;
+      line-height: 12px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}

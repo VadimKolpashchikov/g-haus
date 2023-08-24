@@ -1,0 +1,55 @@
+.main {
+  padding: 50px 0 20px;
+
+  @media (max-width: 991px) {
+    padding: 30px 0 0;
+  }
+  @media (max-width: 575px) {
+    padding: 15px 0 0;
+    overflow: hidden;
+  }
+
+  .wrapper_slider {
+    position: relative;
+    width: 100%;
+  }
+  .visible {
+    overflow: hidden;
+    width: calc(100% + 30px);
+    margin-left: -10px;
+    padding: 0px 20px 0 10px;
+    @media (max-width: 1399px) {
+      padding: 0px;
+      width: 100%;
+      margin-left: 0px;
+    }
+    @media (min-width: 992px) {
+      padding-top: 10px;
+      padding-bottom: 15px;
+      margin-top: -10px;
+      margin-bottom: -15px;
+    }
+    @media (max-width: 575px) {
+      overflow: visible;
+    }
+  }
+  .slide_item {
+    width: 428px;
+    padding-right: 20px;
+    @media (max-width: 575px) {
+      width: 254px;
+      padding-right: 0;
+    }
+  }
+  .slider_btn {
+    width: calc(100% + 40px) !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 991px) {
+      width: calc(100% + 10px);
+    }
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+}

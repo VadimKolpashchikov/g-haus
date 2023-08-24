@@ -1,0 +1,67 @@
+.main {
+  grid-column: 1/-1;
+  padding: 70px 0 50px;
+
+  @media (max-width: 1299px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 575px) {
+    padding: 20px 0;
+  }
+
+  .row {
+    @media (max-width: 991px) {
+      margin: 0 -15px;
+      padding: 0 15px;
+      width: auto;
+    }
+  }
+
+  .title {
+    margin-bottom: 20px;
+
+    @media (max-width: 575px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .buyerSlider {
+    position: relative;
+
+    & > div:first-child {
+      overflow: hidden;
+
+      @media (max-width: 991px) {
+        overflow: visible;
+      }
+    }
+  }
+
+  .slide {
+    width: fit-content;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    img {
+      @media (max-width: 575px) {
+        height: 113px;
+        width: auto;
+      }
+    }
+  }
+
+  .sliderBtns {
+    width: calc(100% + 40px);
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}

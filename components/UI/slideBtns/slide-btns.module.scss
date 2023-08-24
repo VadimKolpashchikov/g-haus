@@ -1,0 +1,47 @@
+.btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  pointer-events: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s all;
+  pointer-events: all;
+  transition: 0.3s all;
+
+  .svg,
+  path {
+    transition: 0.3s all;
+  }
+
+  @media (min-width: 992px) {
+    &:hover {
+      background: #323232;
+      svg,
+      path {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+      }
+    }
+  }
+}
+.left {
+  svg {
+    transform: rotate(180deg);
+  }
+}

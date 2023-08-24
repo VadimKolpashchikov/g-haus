@@ -1,0 +1,47 @@
+.btnAddBasket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 151px;
+  min-height: 39px;
+  padding: 8px 10px;
+  background: #eeec0b;
+  border-radius: 5px;
+  transition: 0.3s all;
+  background-position: center center;
+
+  &_added {
+    background: #2bc20d;
+    color: #ffffff;
+    gap: 0 !important;
+    .btnAddBasket__icon {
+      width: 0 !important;
+    }
+
+    @media (max-width: 575px) {
+      background-image: url(../../../public/global/marker-rassrochka.svg);
+      background-size: 13px 11px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  &__text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    transform: 0.3s all;
+  }
+  &__icon {
+    img {
+      display: block;
+    }
+  }
+
+  @media (min-width: 992px) {
+    &:not(.btnAddBasket_added):hover {
+      background: #d9d710;
+    }
+  }
+}

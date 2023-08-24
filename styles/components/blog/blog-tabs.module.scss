@@ -1,0 +1,84 @@
+.tabs {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 575px) {
+    margin-top: 18px;
+  }
+
+  .tab {
+    padding: 20px 25px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s background;
+
+    @media (max-width: 575px) {
+      padding: 14px 25px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &:not(:first-child) {
+      padding-top: 19px;
+      border-top: 1px solid #dedede;
+
+      @media (max-width: 575px) {
+        padding-bottom: 13px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      &:hover {
+        &:not(.tabActive) {
+          background: rgba(238, 236, 11, 0.3);
+        }
+      }
+    }
+  }
+
+  .tabActive {
+    padding-bottom: 20px !important;
+    border-bottom: none !important;
+    background: #eeec0b;
+
+    @media (max-width: 575px) {
+      padding-bottom: 14px !important;
+    }
+  }
+
+  .subtabs {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 25px;
+    transition: 0.4s height;
+  }
+
+  .subtab {
+    color: rgba(50, 50, 50, 0.7);
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &_active {
+      font-weight: 500;
+    }
+
+    @media (min-width: 992px) {
+      &:not(.subtab_active):hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

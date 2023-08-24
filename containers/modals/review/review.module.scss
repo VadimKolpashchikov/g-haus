@@ -1,0 +1,171 @@
+.main {
+  .title {
+    margin-bottom: 30px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    span {
+      border-bottom: 2px solid #323232;
+      font-weight: 400;
+    }
+    @media (max-width: 991px) {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+    @media (max-width: 575px) {
+      max-width: 300px;
+      font-size: 22px;
+      line-height: 29px;
+    }
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-bottom: 30px;
+    @media (max-width: 575px) {
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .phone {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    @media (max-width: 575px) {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+  }
+  .name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 45px;
+    @media (max-width: 575px) {
+      height: auto;
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+  }
+  .advantages {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    @media (max-width: 575px) {
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+    .input {
+      padding: 10px;
+      border: 2px solid rgba(84, 173, 42, 1);
+      @media (max-width: 575px) {
+        height: 39px;
+        padding: 5px 12px;
+        border: 2px solid #dbdbdb;
+      }
+    }
+  }
+  .disadvantages {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    @media (max-width: 575px) {
+      grid-column: 1/3;
+      grid-row: 4/5;
+    }
+    .input {
+      padding: 10px;
+      border: 2px solid #ff0a0a;
+      @media (max-width: 575px) {
+        height: 39px;
+        padding: 5px 12px;
+        border: 2px solid #dbdbdb;
+      }
+    }
+  }
+  .comment {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    min-height: 196px;
+    @media (max-width: 575px) {
+      grid-column: 1/3;
+      grid-row: 5/6;
+      min-height: auto;
+    }
+    .input {
+      padding: 10px;
+      @media (max-width: 575px) {
+        height: 39px;
+        padding: 5px 12px;
+      }
+    }
+  }
+  .input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 25px;
+    border: 2px solid #dbdbdb;
+    border-radius: 5px;
+    resize: none;
+    @media (max-width: 575px) {
+      height: 39px;
+      padding: 0 12px;
+    }
+  }
+  .rating {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+    }
+    svg {
+      height: auto;
+      color: #CDCDCD;
+      transition: 300ms color;
+      cursor: pointer;
+      @media (max-width: 575px) {
+        width: 31px;
+      }
+    }
+  }
+  .star_active {
+    color: #FFC500!important;
+  }
+  .btn {
+    display: block;
+    max-width: 264px;
+    width: 100%;
+    height: 64px;
+    margin: 0 auto;
+    background: #eeec0b;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    @media (max-width: 575px) {
+      max-width: 210px;
+      height: 34px;
+      font-size: 12px;
+    }
+  }
+  .info {
+    max-width: 455px;
+    margin: 20px auto 0 auto;
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #686868;
+    @media (max-width: 575px) {
+      font-size: 12px;
+      line-height: 19px;
+    }
+  }
+}

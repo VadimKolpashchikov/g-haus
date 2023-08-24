@@ -1,0 +1,64 @@
+.main {
+  padding: 12px 0;
+  background: #eeec0b;
+  @media (max-width: 1300px) {
+    background: #313131;
+    padding: 20px 0 30px 0;
+  }
+  @media (max-width: 991px) {
+    padding: 0 0 20px 0;
+  }
+  @media (max-width: 575px) {
+    padding: 0 0 10px 0;
+  }
+  .row {
+    width: 100%;
+  }
+  .wrapper_slider {
+    position: relative;
+  }
+  .visible {
+    overflow: hidden;
+  }
+  .swiper_wrapper {
+    justify-content: space-between;
+  }
+  .slider_item {
+    width: auto !important;
+  }
+  .link {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    color: #555;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    @media (min-width: 992px) {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    @media (max-width: 1300px) {
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    @media (max-width: 575px) {
+      font-size: 12px;
+    }
+  }
+  .slider_btn {
+    @media (max-width: 991px) {
+      display: none;
+    }
+    @media (min-width: 1301px) {
+      button {
+        width: 22px;
+        height: 22px;
+        svg {
+          width: 6px;
+        }
+      }
+    }
+  }
+}

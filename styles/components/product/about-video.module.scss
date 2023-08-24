@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  @media (max-width: 575px) {
+    gap: 15px;
+  }
+  .item {
+    width: calc(50% - 15px);
+    box-shadow: none;
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+}

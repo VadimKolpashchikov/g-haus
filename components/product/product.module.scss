@@ -1,0 +1,149 @@
+.main {
+  position: relative;
+  display: block;
+  max-width: 408px;
+  border: 2px solid #dbdbdb;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px 20px 20px 20px;
+  color: #323232;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  @media (min-width: 992px) {
+    &:hover {
+      border-color: #ffffff;
+      box-shadow: 6px 6px 15px 0px rgba(90, 90, 90, 0.1);
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding: 10px;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    max-width: 193px;
+    aspect-ratio: 193/280;
+    @media (max-width: 575px) {
+      max-width: 136px;
+    }
+    img {
+      display: block;
+      height: auto;
+    }
+  }
+  .heading {
+    margin-bottom: 10px;
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 130%;
+    min-height: 65px;
+    @media (max-width: 575px) {
+      min-height: 42px;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+  }
+  .row_rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 15px;
+    @media (max-width: 575px) {
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #ffc500;
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+    img {
+      display: block;
+    }
+  }
+  .reviews {
+    font-family: "Inter";
+    font-weight: 400;
+    color: #686868;
+    font-size: 16px;
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+  .prices {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    @media (max-width: 575px) {
+      gap: 6px;
+    }
+  }
+  .new_price {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    @media (max-width: 575px) {
+      font-size: 18px;
+    }
+  }
+  .old_price {
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration-line: line-through;
+    color: #686868;
+    @media (max-width: 575px) {
+      margin-bottom: 0px;
+      font-size: 12px;
+    }
+  }
+  .hit,
+  .sale {
+    position: absolute;
+    top: 7px;
+    @media (max-width: 575px) {
+      display: none;
+    }
+    img {
+      display: block;
+    }
+  }
+  .hit {
+    left: 7px;
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+  .sale {
+    right: 7px;
+  }
+  .btn {
+    @media (max-width: 575px) {
+      min-width: 55px;
+      min-height: 31.2px;
+      div {
+        width: 17px;
+      }
+      img {
+        height: auto;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
